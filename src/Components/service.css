@@ -1,0 +1,45 @@
+.svg_icons {
+  transform: scale(5);
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+imgbox {
+  margin-bottom: 10px;
+}
+
+.bh {
+  height: fit-content;
+}
+
+.counter-box.colored {
+  background: #161d7d;
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center;
+}
+
+.service-box {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transition for background-color, color, and transform */
+}
+
+.service-box.colored {
+  background-color: #161d7d !important;
+  transform: scale(1.05); /* Zoom in by 5% on hover, adjust as needed */
+}
+
+.service-box.colored p,
+.service-box.colored i,
+.service-box.colored h5,
+.service-box.colored .service-icon{
+  color: #00bbf0;
+}
+
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,31 @@
+.social-link {
+  color: black;
+  text-decoration: none;
+  
+}
+
+.lm{
+  margin-left: 10px;
+}
+ 
+.social-link:hover {
+  color: rgb(52, 52, 220);
+}
+
+.coloring {
+  color: #4141ce;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.space{
+  margin-left: 10px;
+  margin-top:50%   ;
+}
+
+.imgcss{
+  width : 75%;
+  height:auto;
+
+  /* margin-left: 10px; */
+}

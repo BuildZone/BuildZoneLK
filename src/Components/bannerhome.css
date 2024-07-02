@@ -1,0 +1,25 @@
+.logo{
+    height: auto;
+    width: 40%;
+    margin-left: 0.25vw ;
+}
+
+.logoL {
+    height: auto;
+    width: 5%;
+    margin: 0;
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    z-index: -2;
+}
+
+.logoR {
+    height: auto;
+    width: 5%;
+    margin: 0;
+    position: fixed;
+    top: 10vh;
+    right: 5vw;
+    z-index: -2;
+}

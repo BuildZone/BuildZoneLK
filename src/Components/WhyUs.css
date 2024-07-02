@@ -1,0 +1,13 @@
+.box {
+  transition: transform 1s ease; /* Define the transition property */
+}
+
+.box:hover {
+  transform: scale(1.1); /* Set the scaling factor on hover */
+}
+
+/* .scaled {
+  transform: scale(
+    1.5
+  ); 
+} */

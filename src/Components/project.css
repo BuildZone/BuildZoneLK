@@ -1,0 +1,79 @@
+.container{
+  margin-top:10px;
+  
+}
+
+.card{
+  margin-top:10px;
+  margin-bottom:10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.data{
+  justify-content: center;
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #d2d2d2
+}
+
+.counter { 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #100a0a;
+  line-height: 28px
+}
+
+.counterA { 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #100a0a;
+  line-height: 28px
+  }
+  
+
+  .counter-box {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transition for background-color, color, and transform */
+  }
+  
+  .counter-box.colored {
+    background-color: #161d7d !important;
+    transform: scale(1.05); /* Zoom in by 5% on hover, adjust as needed */
+  }
+  .counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center
+  }
+
+  .counter-box.colored p,
+  .counter-box.colored i,
+  .counter-box.colored .counter,
+  .counter-box.colored .svg_icons{
+    color: #76cbe2;
+  }
+  
+  .lineone {
+    display: inline-block;
+}
+
+.svg_icons {
+  transform: scale(5);
+  margin-bottom: 60px;
+  margin-top: 40px;
+  
+}
