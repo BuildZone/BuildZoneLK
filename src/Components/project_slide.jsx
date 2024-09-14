@@ -10,17 +10,19 @@ import logo7 from "../assets/images/logoJayantha.png";
 import logo8 from "../assets/images/logoLaserHoldings.jpeg";
 import logo9 from "../assets/images/logoTicket.png";
 import logo10 from "../assets/images/logoEMC.jpeg";
+import logo11 from "../assets/images/logoWisdomCom.png";
 
 const clientImages = [logo1,
-  logo2,
   // logo3,
+  logo2,
   logo4,
+  logo11,
+  logo9,
   logo5,
+  logo10,
   logo6,
   logo7,
   logo8,
-  logo9,
-  logo10,
 ];
 
 const Project_Slide = () => {
