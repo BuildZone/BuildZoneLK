@@ -3,6 +3,7 @@ import HomeIcon from "@mui/icons-material/Home";
 // import InfoIcon from "@mui/icons-material/Info";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 import EditCalendarIcon from "@mui/icons-material/EditCalendar";
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 // import { ToastContainer } from "react-toastify";
@@ -85,9 +86,9 @@ const Footer = ({ scrollToTopic }) => {
     { id: "num", text: "(+94) 76 222 5001", icon: <WhatsAppIcon />, link:"https://wa.me/94762225001" },
     { id: "servi", text: "BuildZone", icon: <LinkedInIcon /> ,link: ""},
 
-    { id: "produc", text: "buildzone4u@gmail.com", icon: <MarkunreadIcon />, link:"mailto:buildzone4u@gmail.com" },
+    { id: "produc", text: "hello@buildzoneit.com", icon: <MarkunreadIcon />, link:"mailto:buildzone4u@gmail.com" },
     
-    { id: "clien", text: "Website", icon: <VpnLockIcon />,link:"https://www.buildzone.online" },
+    { id: "clien", text: "BuildZone IT", icon: <FacebookIcon />,link:"https://facebook.com/0BuildZoneIT" },
     
   ];
 
@@ -199,13 +200,13 @@ const Footer = ({ scrollToTopic }) => {
       </section>
 
       <section className="d-flex justify-content-center mb-3 mt-3">
-        <div className="">
-          <span>
-             &copy; All Rights Reserved By
-            BuildZone IT Solution
-          </span> || 2024
-        </div>
-      </section>
+  <div>
+    <span>
+      &copy; All Rights Reserved By BuildZone IT Solution || {new Date().getFullYear()}
+    </span>
+  </div>
+</section>
+
     </>
   );
 };
