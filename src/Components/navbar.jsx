@@ -1,7 +1,6 @@
 import React from "react";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import img from "../assets/images/11111111.png";
 
 
 const Navbar = ({ show, setShow,side }) => {

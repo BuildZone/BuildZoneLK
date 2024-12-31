@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import logo1 from "../assets/images/logofs.webp";
 import logo2 from "../assets/images/logoBoost.png";
 import logo3 from "../assets/images/logoBuildZone.png";
 import logo4 from "../assets/images/logoCement.jpeg";
@@ -11,18 +10,28 @@ import logo8 from "../assets/images/logoLaserHoldings.jpeg";
 import logo9 from "../assets/images/logoTicket.png";
 import logo10 from "../assets/images/logoEMC.jpeg";
 import logo11 from "../assets/images/logoWisdomCom.png";
+import logo12 from "../assets/images/ceyon-tech.png";
+import logo13 from "../assets/images/Thilanka-removebg-preview.png";
+import logo14 from "../assets/images/WinWay_Logo.jpeg";
+import logo15 from "../assets/images/RuwanStoresLogo.png";
+import logo16 from "../assets/images/bentota.png";
 
-const clientImages = [logo1,
+const clientImages = [
   // logo3,
-  logo2,
   logo4,
-  logo11,
+  logo2,
   logo9,
+  logo11,
   logo5,
   logo10,
+  logo12,
   logo6,
   logo7,
   logo8,
+  logo14,
+  logo13,
+  logo15,
+  logo16,
 ];
 
 const Project_Slide = () => {
