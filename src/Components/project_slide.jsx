@@ -28,8 +28,8 @@ const clientImages = [
   logo6,
   logo7,
   logo8,
-  logo14,
   logo13,
+  logo14,
   logo15,
   logo16,
 ];
