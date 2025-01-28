@@ -5,7 +5,7 @@ import logo3 from "../assets/images/logoBuildZone.png";
 import logo4 from "../assets/images/logoCement.jpeg";
 import logo5 from "../assets/images/logoLaserDigi.png";
 import logo6 from "../assets/images/logoInspira.png";
-import logo7 from "../assets/images/logoJayantha.png";
+import logo7 from "../assets/images/LogoJEW.png";
 import logo8 from "../assets/images/logoLaserHoldings.jpeg";
 import logo9 from "../assets/images/logoTicket.png";
 import logo10 from "../assets/images/logoEMC.jpeg";
@@ -18,20 +18,20 @@ import logo16 from "../assets/images/bentota.png";
 
 const clientImages = [
   // logo3,
-  logo4,
-  logo2,
   logo9,
+  logo16,
   logo11,
+  logo15,
   logo5,
-  logo10,
+  logo14,
   logo12,
+  logo10,
   logo6,
   logo7,
   logo8,
   logo13,
-  logo14,
-  logo15,
-  logo16,
+  logo4,
+  logo2,
 ];
 
 const Project_Slide = () => {
