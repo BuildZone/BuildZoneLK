@@ -15,6 +15,8 @@ import logo13 from "../assets/images/Thilanka-removebg-preview.png";
 import logo14 from "../assets/images/WinWay_Logo.jpeg";
 import logo15 from "../assets/images/RuwanStoresLogo.png";
 import logo16 from "../assets/images/bentota.png";
+import logo17 from "../assets/images/LogoWinmark.png";
+import logo18 from "../assets/images/LogoShiny.png";
 
 const clientImages = [
   // logo3,
@@ -30,8 +32,10 @@ const clientImages = [
   logo7,
   logo8,
   logo13,
-  logo4,
+  // logo4,
   logo2,
+  logo17,
+  logo18,
 ];
 
 const Project_Slide = () => {
@@ -68,8 +72,9 @@ const Project_Slide = () => {
           </h2>
           <p>
             "Our esteemed clients entrust us with their digital aspirations,
-            benefiting from our bespoke solutions,<br/> innovative approach,
-            and unwavering commitment to their success."
+            benefiting from our bespoke solutions,
+            <br /> innovative approach, and unwavering commitment to their
+            success."
           </p>
         </div>
         <br />
@@ -84,7 +89,11 @@ const Project_Slide = () => {
                 <img
                   src={image}
                   alt={`Client ${index + 1}`}
-                  style={{ minWidth: "200px", height: "200px" }}
+                  style={{
+                    minWidth: "200px",
+                    height: "200px",
+                    padding: "30px",
+                  }}
                 />
               </div>
             ))}
