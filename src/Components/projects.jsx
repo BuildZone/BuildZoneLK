@@ -4,6 +4,7 @@ import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import Groups2Icon from "@mui/icons-material/Groups2";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
+import Inventory2Icon from "@mui/icons-material/Inventory2";
 import { useState } from "react";
 
 import { useInView } from "react-intersection-observer";
@@ -49,7 +50,7 @@ const Projects = () => {
   const data = [
     {
       title: "Projects",
-      count: "8",
+      count: "45",
       icon: <LibraryBooksIcon className="svg_icons" />,
     },
     {
@@ -58,13 +59,13 @@ const Projects = () => {
       icon: <Groups2Icon className="svg_icons" />,
     },
     {
-      title: "Code Lines",
-      count: "100K+",
-      icon: <TerminalIcon className="svg_icons" />,
+      title: "Products",
+      count: "9",
+      icon: <Inventory2Icon className="svg_icons" />,
     },
     {
       title: "Clients",
-      count: "6",
+      count: "38",
       icon: <GroupAddIcon className="svg_icons" />,
     },
   ];
