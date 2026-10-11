@@ -8,12 +8,11 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 // import { ToastContainer } from "react-toastify";
 // import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
-import notify from "./toast";
 import { Link } from "react-router-dom";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MarkunreadIcon from '@mui/icons-material/Markunread';
-import VpnLockIcon from '@mui/icons-material/VpnLock';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { PolicyLinks } from './PolicyPage';
 
 import {
   ListItem,
@@ -24,54 +23,8 @@ import {
 import { blue } from "@mui/material/colors";
 
 const Footer = ({ scrollToTopic }) => {
-  const isValidEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-  
-  
-  const [subed, setSubed] = React.useState(false);
-  let [storeData, setStoreData] = React.useState([]);
-  const check = (e) => {
-    setSubed(false);
-    setEmail(e.target.value);
-    storeData.map((subscriber) => {
-      if (subscriber === e.target.value) {
-        setSubed(true);
-      }
-    });
-  };
-
-  React.useEffect(() => {
-    setStoreData(JSON.parse(localStorage.getItem("subscribers")) || []);
-  }, []);
-
-  const [email, setEmail] = React.useState("");
   const [isHovered, setIsHovered] = React.useState("");
 
-  const subscribe = async () => {
-    if (subed) {
-      // remove email from local storage and update
-      const subscribers = JSON.parse(localStorage.getItem("subscribers")) || [];
-      const updatedSubscribers = subscribers.filter(
-        (subscriber) => subscriber !== email
-      );
-      localStorage.setItem("subscribers", JSON.stringify(updatedSubscribers));
-      
-      notify("Unsubscribed successfully");
-     
-    } else {
-      const subscribers = JSON.parse(localStorage.getItem("subscribers")) || [];
-
-      subscribers.push(email);
-
-      localStorage.setItem("subscribers", JSON.stringify(subscribers));
-      
-      notify("Subscribed successfully");
-
-    }
-    setEmail("");
-  };
   const topics = [
     { id: "home", text: "Home", icon: <HomeIcon /> },
     { id: "service", text: "Services", icon: <HomeRepairServiceIcon /> },
@@ -182,18 +135,12 @@ const Footer = ({ scrollToTopic }) => {
               </div>
             </div>
             <div className="col-md-6 col-lg-3 info_col ">
-              <h4>Subscribe</h4>
-              <form>
-                <input
-                  type="text"
-                  placeholder="Enter email"
-                  value={email}
-                  onChange={(e) => check(e)}
-                />
-                <button type="button" onClick={subscribe} disabled={(isValidEmail(email)===false)}>
-                  {subed ? "Unsubcribe" : "Subscribe"}
-                </button>
-              </form>
+              <div className="info_link_box">
+                <h4>Policies</h4>
+                <nav aria-label="Business policies" className="footer-policy-links">
+                  <PolicyLinks />
+                </nav>
+              </div>
             </div>
           </div>
         </div>

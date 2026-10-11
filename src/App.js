@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Components/main.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
+import PolicyPage from './Components/PolicyPage';
 
 
 
@@ -66,7 +67,13 @@ useEffect(() => {
   return (
     <div>
       <BrowserRouter basename="/">
-          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/return-policy" element={<PolicyPage policy="returns" />} />
+            <Route path="/privacy-policy" element={<PolicyPage policy="privacy" />} />
+            <Route path="/terms-and-conditions" element={<PolicyPage policy="terms" />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
 
       </BrowserRouter>
 
