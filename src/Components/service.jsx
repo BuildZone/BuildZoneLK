@@ -18,6 +18,27 @@ const Service = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const servicesData = [
     {
+      icon: <PriceChangeIcon className="service-icon" />,
+      title: "POS System",
+      price: "Starting from LKR 40,000",
+      description:
+        "Manage sales, billing, and inventory with a point-of-sale system built for your business.",
+    },
+    {
+      icon: <ManageAccountsIcon className="service-icon" />,
+      title: "Time Table Management System",
+      price: "Starting from LKR 30,000",
+      description:
+        "Create and manage timetables, organize schedules, and coordinate classes or staff with ease.",
+    },
+    {
+      icon: <MobileScreenShareIcon className="service-icon" />,
+      title: "Delivery System",
+      price: "Starting from LKR 40,000",
+      description:
+        "Manage delivery orders, coordinate drivers, and track delivery progress in one place.",
+    },
+    {
       icon: <DvrIcon className="service-icon" />,
       title: "Website Design and Development",
       description:
@@ -116,6 +137,7 @@ const Service = () => {
                     <div className="svg_icons ">{service.icon}</div>
                     <div className="detail-box">
                       <h5>{service.title}</h5>
+                      {service.price && <p><strong>{service.price}</strong></p>}
                       <p>{service.description}</p>
                     </div>
                   </div>
